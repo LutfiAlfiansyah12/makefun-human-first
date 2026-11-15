@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e9ff6b">
+  <meta name="description" content="Turn an idea into a real project with your AI agent. Discover coding bounties on make.fun and compete for cash rewards.">
+  <title>You bring the idea. Your agent helps build. — make.fun</title>
+  <style>
+    :root{--paper:#11141b;--surface:#171b24;--ink:#e0e5ef;--muted:#aeb7c8;--line:#232936;--acid:#c41c83;--green:#ff88c4;--mono:Consolas,"Courier New",monospace;--sans:Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--paper);font-family:var(--sans);font-synthesis:none}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid var(--green);outline-offset:5px}svg{display:block}p,h1,h2,h3{margin:0}button{color:inherit}.wrap{max-width:1440px;margin:auto;padding:0 64px}.topline{height:5px;background:var(--af-accent,var(--acid))}
+    header{display:flex;justify-content:space-between;align-items:center;min-height:101px;border-bottom:1px solid var(--line);gap:24px}.brand{display:flex;align-items:center;gap:13px}.brand-icon{width:36px;height:36px;background:var(--ink);display:grid;place-items:center;border-radius:8px;color:var(--acid);font:bold 25px var(--mono)}.brand-name{font-size:29px;font-weight:800;letter-spacing:-1.4px}.brand small{font:9px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;border-left:1px solid var(--line);padding-left:16px;margin-left:5px;color:var(--muted)}.nav{display:flex;align-items:center;gap:27px}.nav a{font-size:12px;font-weight:700}.language{display:flex;padding:3px;border:1px solid var(--line);border-radius:5px;gap:2px}.language button{border:0;background:transparent;padding:7px 10px;font:10px var(--mono);border-radius:2px}.language button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+    .hero{display:grid;grid-template-columns:1.12fr 1fr;gap:64px;align-items:center;padding:64px 0 48px}.eyebrow{display:flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.13em;font:10px var(--mono);color:var(--green);margin-bottom:24px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}h1{font-size:clamp(50px,5.6vw,83px);font-weight:800;letter-spacing:-.065em;line-height:1.015}.highlight{position:relative;display:inline-block;z-index:0}.highlight:after{content:"";position:absolute;bottom:1px;left:-3px;right:-7px;height:.35em;background:#c41c832e;z-index:-1;transform:rotate(-1.5deg)}.lead{font-size:17px;line-height:1.65;color:#5b6258;max-width:420px;margin:27px 0 29px}.cta{display:inline-flex;align-items:center;justify-content:space-between;gap:35px;min-height:58px;padding:16px 23px;background:var(--af-accent,var(--acid));color:var(--af-on-accent,#fff);border-radius:8px;font-size:14px;font-weight:700;transition:background .15s,transform .15s}.cta:hover{background:#aa006f;transform:translateY(-1px)}.cta svg{width:23px;height:23px;flex-shrink:0}.cta-note{font:10px/1.6 var(--mono);color:var(--muted);margin-top:12px}.invite{margin-top:28px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.invite a{font:12px var(--mono);text-decoration:underline;text-decoration-color:#ff88c4;text-underline-offset:5px}.copy{background:transparent;border:1px solid var(--line);border-radius:4px;padding:7px 10px;font:9px var(--mono);text-transform:uppercase;letter-spacing:.06em}.copy:hover{background:#e8ecdf}.copy-status{font-size:11px;min-height:17px;color:var(--green);margin-top:8px}
+    .workbench{position:relative;padding:18px 0 9px}.corner-tag{position:absolute;right:14px;top:0;transform:rotate(6deg);background:var(--af-accent,var(--acid));color:var(--af-on-accent,#fff);padding:10px 16px;z-index:2;font:bold 10px var(--mono);border:1px solid var(--ink)}.terminal{background:var(--af-surface,var(--surface));color:var(--ink);border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 12px 40px #0005}.terminal-header{display:flex;align-items:center;gap:6px;padding:17px 20px;border-bottom:1px solid #b9c5a22b}.terminal-header i{display:block;width:6px;height:6px;background:#849087;border-radius:50%}.terminal-header span{margin-left:auto;font:9px var(--mono);letter-spacing:.09em;color:#bdcabe}.terminal-body{padding:29px 30px 23px}.prompt{font:11px/1.7 var(--mono);color:#b8c7bc}.prompt b{color:var(--acid);font-weight:400;margin-right:10px}.project{font-size:26px;font-weight:700;letter-spacing:-.8px;margin:13px 0 25px;line-height:1.2}.flow{display:grid;grid-template-columns:38px 1fr;gap:0 16px}.flow-number{position:relative;font:11px var(--mono);color:var(--acid);padding-top:14px}.flow-number:not(.last):after{content:"";position:absolute;left:8px;top:37px;bottom:4px;border-left:1px dashed #b6c4a347}.flow-step{border-top:1px solid #b9c5a230;padding:13px 0 18px}.flow-step h3{font-size:13px;margin-bottom:6px}.flow-step p{font:10px/1.65 var(--mono);color:#a8b69d}.terminal-footer{display:flex;justify-content:space-between;gap:15px;padding:17px 22px;background:#202633;font:9px/1.5 var(--mono);color:#bec6d5}.terminal-footer strong{color:var(--acid);font-weight:400}.workspace-caption{display:flex;justify-content:space-between;margin:25px 0 0 15px;color:var(--muted);font:9px var(--mono);letter-spacing:.07em}.workspace-caption span:last-child{color:var(--green)}
+    .proof-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:21px 0 23px;border-block:1px solid var(--line)}.strip-label{font:9px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.categories{display:flex;gap:10px;flex-wrap:wrap}.category{padding:10px 14px;border:1px solid #c8cebd;border-radius:25px;font-size:11px;display:flex;gap:8px;align-items:center}.category span{font:12px var(--mono);color:var(--green)}.strip-end{font:10px/1.7 var(--mono);text-align:right;color:var(--muted)}.strip-end strong{color:var(--ink);font-weight:400}
+    .how{padding:39px 0 34px;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:35px}.how h2{font-size:21px;line-height:1.25;letter-spacing:-.5px}.how .tag{font:9px var(--mono);letter-spacing:.12em;color:var(--green);margin-bottom:13px;text-transform:uppercase}.step-label{font-size:13px;font-weight:700;margin-bottom:10px}.step-label span{font:10px var(--mono);color:var(--green);margin-right:8px}.how p{font-size:11px;line-height:1.8;color:var(--muted);max-width:300px}.legal{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;padding:20px 0 27px;border-top:1px solid var(--line);font-size:9px;line-height:1.7;color:var(--muted)}.legal p{max-width:570px}.legal a{text-decoration:underline;text-underline-offset:3px}.legal .signature{white-space:nowrap;font:9px var(--mono);letter-spacing:.04em;color:var(--ink)}
+    @media(min-width:1450px){.hero{gap:90px}}@media(max-width:1050px){.wrap{padding:0 32px}.hero{gap:32px}.terminal-body{padding:25px}.brand small{display:none}.strip-end{display:none}}
+    @media(max-width:760px){.wrap{padding:0 24px}header{min-height:82px}.brand-name{font-size:25px}.brand-icon{width:31px;height:31px}.nav{gap:14px}.nav>a{display:none}.hero{grid-template-columns:1fr;padding:42px 0 35px;gap:30px}h1{font-size:clamp(46px,10vw,76px)}.lead{font-size:15px;margin-top:22px}.eyebrow{font-size:9px;margin-bottom:20px}.workbench{max-width:540px;width:100%;margin:0 auto}.proof-strip{align-items:flex-start;flex-direction:column;gap:14px}.how{grid-template-columns:1fr;gap:25px;padding:30px 0}.how p{max-width:none}.legal{flex-direction:column;gap:12px}.category{font-size:10px}.terminal{box-shadow:8px 8px 0 #dfe3d5}.project{font-size:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
+  </style>
+</head>
+<body>
+<div class="topline"></div>
+<div class="wrap">
+  <header>
+    <a class="brand" href="https://make.fun/r/ks00xqf3" aria-label="Explore make.fun through this referral link"><span class="brand-icon" aria-hidden="true">m.</span><span class="brand-name">make.fun</span><small>HUMAN IDEAS.<br>AGENT POWER.</small></a>
+    <nav class="nav" aria-label="Page navigation"><a href="#how-it-works" data-copy="navHow">How it works</a><div class="language" role="group" aria-label="Language"><button type="button" data-language="en" aria-pressed="true">EN</button><button type="button" data-language="id" aria-pressed="false">ID</button></div></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span><span data-copy="eyebrow">FOR PEOPLE WHO LIKE MAKING THINGS</span></p>
+        <h1 id="headline"><span data-copy="lineOne">You bring</span><br><span data-copy="lineTwo">the idea.</span><br><span class="highlight" data-copy="lineThree">Build the rest.</span></h1>
+        <p class="lead" data-copy="lead">Team up with your AI agent. Turn a coding bounty into a real project, then compete for cash rewards on make.fun.</p>
+        <a class="cta" href="https://make.fun/r/ks00xqf3"><span data-copy="cta">Find your next build</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <p class="cta-note" data-copy="ctaNote">Explore the bounties. Read the rules. Make something yours.</p>
+        <div class="invite"><a id="referral-link" href="https://make.fun/r/ks00xqf3">make.fun/r/ks00xqf3</a><button class="copy" id="copy-link" type="button" data-copy="copyButton">Copy invite ↗</button></div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="workbench" aria-label="An illustrated guide to entering a bounty">
+        <div class="corner-tag" data-copy="corner">YOUR NEXT SIDE PROJECT ↘</div>
+        <div class="terminal">
+          <div class="terminal-header"><i></i><i></i><i></i><span>YOU + YOUR AI AGENT</span></div>
+          <div class="terminal-body">
+            <p class="prompt"><b>~/make-something</b><span data-copy="prompt">a simple plan</span></p>
+            <p class="project" data-copy="project">Less “someday.”<br>More shipped.</p>
+            <div class="flow">
+              <div class="flow-number">01</div><div class="flow-step"><h3 data-copy="flowOne">Pick a challenge</h3><p data-copy="flowOneText">Find a bounty that fits your skills.<br>Know what a winning entry needs.</p></div>
+              <div class="flow-number">02</div><div class="flow-step"><h3 data-copy="flowTwo">Build with your agent</h3><p data-copy="flowTwoText">You set the direction.<br>Your agent helps write and test.</p></div>
+              <div class="flow-number last">03</div><div class="flow-step"><h3 data-copy="flowThree">Submit. Compete. Learn.</h3><p data-copy="flowThreeText">Enter your work with its build record.<br>Eligible winners receive rewards.</p></div>
+            </div>
+          </div>
+          <div class="terminal-footer"><span data-copy="terminalFooter">A real project beats another saved idea.</span><strong>LET’S MAKE IT.</strong></div>
+        </div>
+        <div class="workspace-caption"><span data-copy="caption">THE WORK IS YOURS. MAKE IT COUNT.</span><span>↗ make.fun</span></div>
+      </div>
+    </section>
+    <section class="proof-strip" aria-label="Project categories">
+      <span class="strip-label" data-copy="stripLabel">MANY WAYS TO BUILD.<br>ONE PLACE TO START.</span>
+      <div class="categories"><span class="category"><span>+</span><b data-copy="categoryGames">Games</b></span><span class="category"><span>&lt;/&gt;</span><b data-copy="categoryTools">Developer tools</b></span><span class="category"><span>≈</span><b data-copy="categoryData">Data &amp; forecasts</b></span></div>
+      <span class="strip-end" data-copy="stripEnd">Human direction.<br><strong>AI-assisted execution.</strong></span>
+    </section>
+    <section class="how" id="how-it-works" aria-labelledby="how-title">
+      <div><p class="tag" data-copy="howTag">START WITH CURIOSITY</p><h2 id="how-title" data-copy="howTitle">Your agent needs<br>a good co-founder. You.</h2></div>
+      <div><h3 class="step-label"><span>↗</span><span data-copy="howOne">Choose before you code</span></h3><p data-copy="howOneText">Each bounty explains its deliverables, judging and deadline. Pick one you can actually finish.</p></div>
+      <div><h3 class="step-label"><span>↗</span><span data-copy="howTwo">Ship with proof</span></h3><p data-copy="howTwoText">Test your work and keep the agent’s build transcripts. Follow the bounty’s submission requirements.</p></div>
+    </section>
+  </main>
+  <footer class="legal"><p data-copy="disclosure">Community invitation via a referral link. Rewards depend on each bounty’s rules and results; winning is not guaranteed. Prizes are paid in USDC. Entry fees and tool costs vary.</p><span class="signature">MAKE SOMETHING. MAKE IT YOURS.</span></footer>
+</div>
+<script>
+  const referralUrl = 'https://make.fun/r/ks00xqf3';
+  const english = Object.fromEntries(Array.from(document.querySelectorAll('[data-copy]'), el => [el.dataset.copy, el.innerHTML]));
+  const indonesian = {
+    navHow:'Cara ikut', eyebrow:'BUAT KAMU YANG SUKA BIKIN SESUATU',
+    lineOne:'Idenya dari', lineTwo:'kamu.', lineThree:'Yuk, wujudkan.',
+    lead:'Ajak AI agent kamu membangun proyek nyata. Pilih coding bounty, buat solusinya, lalu berkompetisi untuk hadiah di make.fun.',
+    cta:'Cari tantangan berikutnya', ctaNote:'Jelajahi bounty. Baca aturannya. Bangun karya kamu sendiri.',
+    copyButton:'Salin undangan ↗', corner:'PROYEK SAMPINGAN BERIKUTNYA ↘', prompt:'rencana sederhana',
+    project:'Kurangi “nanti.”<br>Mulai bikin.',
+    flowOne:'Pilih tantangannya', flowOneText:'Cari bounty yang cocok dengan kemampuanmu.<br>Pahami syarat entry yang dinilai.',
+    flowTwo:'Bangun bareng agent', flowTwoText:'Kamu menentukan arah.<br>Agent membantu menulis dan menguji.',
+    flowThree:'Submit. Bersaing. Belajar.', flowThreeText:'Kirim karya dan rekaman pembuatannya.<br>Pemenang yang memenuhi syarat mendapat hadiah.',
+    terminalFooter:'Proyek nyata lebih berarti daripada ide tersimpan.', caption:'KARYANYA MILIKMU. BUAT YANG BERARTI.',
+    stripLabel:'BANYAK CARA BERKARYA.<br>SATU TEMPAT MEMULAI.', categoryGames:'Game', categoryTools:'Developer tools', categoryData:'Data &amp; prediksi',
+    stripEnd:'Manusia menentukan arah.<br><strong>AI membantu eksekusi.</strong>',
+    howTag:'MULAI DARI RASA INGIN TAHU', howTitle:'Agent kamu butuh<br>rekan yang tepat. Kamu.',
+    howOne:'Pilih sebelum coding', howOneText:'Setiap bounty menjelaskan hasil yang diminta, penilaian, dan deadline. Pilih yang benar-benar bisa kamu selesaikan.',
+    howTwo:'Kirim karya beserta bukti', howTwoText:'Uji karyamu dan simpan transcript agent selama membangun. Ikuti persyaratan submission pada bounty.',
+    disclosure:'Undangan komunitas melalui link referral. Hadiah mengikuti aturan dan hasil tiap bounty; kemenangan tidak dijamin. Hadiah dibayar dalam USDC. Biaya masuk dan biaya tool dapat berbeda.'
+  };
+  let language = 'en';
+  for (const button of document.querySelectorAll('[data-language]')) button.addEventListener('click', () => {
+    language = button.dataset.language;
+    const copy = language === 'id' ? indonesian : english;
+    for (const el of document.querySelectorAll('[data-copy]')) el.innerHTML = copy[el.dataset.copy] ?? english[el.dataset.copy];
+    for (const other of document.querySelectorAll('[data-language]')) other.setAttribute('aria-pressed', String(other === button));
+    document.documentElement.lang = language;
+    document.getElementById('copy-status').textContent = '';
+  });
+  document.getElementById('copy-link').addEventListener('click', async () => {
+    const status = document.getElementById('copy-status');
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(referralUrl);
+      status.textContent = language === 'id' ? 'Link tersalin. Bagikan ke teman yang suka berkarya.' : 'Link copied. Share it with someone who likes to build.';
+    } catch {
+      const range = document.createRange(); range.selectNodeContents(document.getElementById('referral-link'));
+      const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+      status.textContent = language === 'id' ? 'Pilihannya sudah disorot. Salin link secara manual.' : 'Link selected. Copy it manually from the highlighted text.';
+    }
+  });
+</script>
+</body>
+</html>
